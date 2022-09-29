@@ -1,7 +1,7 @@
 #exampleSubmit.sub
 universe = vanilla
 log = example_$(Cluster).log
-executable = example.sh
+executable = example2.sh
 arguments = $(Process)
 output = example_$(Cluster)_$(Process).out
 error = example_$(Cluster)_$(Process).err
@@ -16,6 +16,7 @@ Requirements = (Target.HasCHTCStaging == true)
 request_cpus = 4
 request_memory = 16GB
 request_disk = 16GB
+
 
 queue 1
 
