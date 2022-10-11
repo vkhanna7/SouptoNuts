@@ -1,4 +1,4 @@
-#exampleSubmit.sub
+#exampleSubmit2.sub
 universe = vanilla
 log = example_$(Cluster).log
 executable = example2.sh
@@ -9,7 +9,7 @@ error = example_$(Cluster)_$(Process).err
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
 
-transfer_input_files = example.sh
+transfer_input_files =http://proxy.chtc.wisc.edu/SQUID/chtc/python39.tar.gz, packages.tar.gz, example.sh
 
 Requirements = (Target.HasCHTCStaging == true)
 
